@@ -171,11 +171,13 @@ body {
 }
 .s3{
   position: absolute;
-  top: 20%
+  top: 200%
 }
 section {
   height: 100vh;
   color: black;
+  font-size: 80px;
+
 }
 
 section h1 {
