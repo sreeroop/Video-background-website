@@ -2,16 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+
 }
+
 body {
   font-family: sans-serif;
 }
-
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
   height: 15vh;
+  z-index: 5;
   background: rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: space-between;
@@ -140,31 +143,42 @@ body {
 }
 .intro {
   height: 100vh;
-  width: 100%;
-  background: url(./assets/WhatsApp\ Video3.mp4);
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 }
+
 .intro video {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  background-size: cover;
 }
+
 .intro h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 6rem;
+  font-size: 80px;
   color: white;
+}
+.s1{
+  position: absolute;
+  top: 20%
+}
+.s2{
+  position: absolute;
+  top: 100%
+}
+.s3{
+  position: absolute;
+  top: 20%
 }
 section {
   height: 100vh;
   color: black;
 }
+
 section h1 {
   padding-top: 300px;
   text-align: center;
-  font-size: 6rem;
+  font-size: 80px;
 }
