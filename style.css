@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+.nav img {
+  margin-left: 5px;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  height: 10vh;
+  z-index: 3;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-links li a {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links li a:hover {
+  color: #cbe2f4;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    background: rgba(21, 73, 115, 1);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .nav-links.open {
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+    pointer-events: all;
+    overflow: hidden;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 3;
+  }
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .nav-links li {
+    list-style: none;
+    padding: 0 30px;
+    font-size: 4em;
+    overflow: hidden;
+  }
+  .nav-links li a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+.intro {
+  height: 100vh;
+  width: 100%;
+  background: url(./assets/WhatsApp\ Video3.mp4);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+.intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: white;
+}
+section {
+  height: 100vh;
+  color: black;
+}
+section h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-size: 6rem;
+}
