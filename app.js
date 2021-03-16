@@ -10,7 +10,11 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
+<<<<<<< HEAD
   duration: 5000,
+=======
+  duration: 7000,
+>>>>>>> d9159b4b33043e5ea9fba24a98f3b06a15ad8e90
   trigger: intro,
   triggerHook: 0
 })
@@ -42,7 +46,11 @@ setInterval(() => {
   console.log(scrollpos, delay);
 
   video.currentTime = delay;
+<<<<<<< HEAD
 }, 50);
+=======
+}, 20);
+>>>>>>> d9159b4b33043e5ea9fba24a98f3b06a15ad8e90
 
 const hamburger = document.querySelector(".hamburger");
 
