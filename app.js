@@ -10,7 +10,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 9000,
+  duration: 7000,
   trigger: intro,
   triggerHook: 0
 })
@@ -21,7 +21,7 @@ let scene = new ScrollMagic.Scene({
 const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-  duration: 3000,
+  duration: 1000,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -42,7 +42,7 @@ setInterval(() => {
   console.log(scrollpos, delay);
 
   video.currentTime = delay;
-}, 33.3);
+}, 20);
 
 const hamburger = document.querySelector(".hamburger");
 
