@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 * {
   scroll-behavior:smooth ;
   margin: 0;
@@ -8,8 +10,27 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Poppins",sans-serif;
   
+}
+
+h1,h2,h3,h4,p,a{
+  color: white;
+}
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1rem;
+}
+p,a{
+  font-size: 0.8rem;
 }
 .nav {
   position: fixed;
@@ -29,7 +50,7 @@ body {
   left: 5%;
   top: 50%;
   transform: translate(-5%, -50%);
-  height: 10vh;
+  height: 15vh;
   z-index: 3;
 }
 .nav-links {
@@ -42,7 +63,7 @@ body {
   margin-left: auto;
 }
 .nav-links li a {
-  color: black;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -163,27 +184,38 @@ body {
   font-size: 80px;
   color: white;
 }
-.s1{
+.container{
   position: absolute;
-  top: 20%
-}
-.s2{
-  position: absolute;
-  top: 100%
-}
-.s3{
-  position: absolute;
-  top: 200%
-}
-section {
-  height: 100vh;
-  color: black;
-  font-size: 80px;
-
+  top: 100vh;
 }
 
-section h1 {
-  padding-top: 300px;
-  text-align: center;
-  font-size: 80px;
+#home{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+#home h1{
+  font-size: 3rem;
+}
+#about{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+
+}
+#about h4{
+  width: 50%;
+}
+#Contact{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+} 
