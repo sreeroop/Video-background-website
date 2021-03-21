@@ -41,3 +41,9 @@ setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
   video.currentTime = delay;
 }, 33.33);
+
+
+window.onload = function(){
+  var el = document.getElementById('preloader');
+  el.style.display = 'none';
+};
