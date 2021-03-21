@@ -7,73 +7,119 @@
     <link rel="stylesheet" href="./style.css" />
     <title>tathva</title>
   </head>
-  <body>
-    <div class="nav">
-      <img src="./assets/tathva_logo_white.png" alt="tathvalogo" />
-      <button
-        class="menu hamburger"
-        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
-        aria-label="Main Menu"
-      >
-        <svg width="50" height="50" viewBox="0 0 100 100">
-          <path
-            class="line line1"
-            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-          />
-          <path class="line line2" d="M 20,50 H 80" />
-          <path
-            class="line line3"
-            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-          />
-        </svg>
-      </button>
-      <ul class="nav-links">
-        <li>
-          <a href="#" >Home</a>
-        </li>
-        <li>
-            <a href="About.html" >About</a>
-          </li>
-          <li>
-            <a href="#" >Contact</a>
-          </li>
-          <li>
-            <a href="#" >Marketing</a>
-          </li>
-      </ul>
-    </div>
-    <div class="intro">
-      <h1>Tathva21</h1>
-      <video src="./assets/Atlas720-1.webm"></video>
-    </div>
-    <div class="container">
-      <section id="home">
-        <h1>
-          Man vs Machine
-        </h1>
-      </section>
-      <section id="about">
-        <h1>About Us</h1>
-        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iure impedit officia velit at sed hic beatae soluta mollitia provident amet dolorum adipisci alias, qui aperiam fuga asperiores perspiciatis error.
-        </h4>
-      </section>
-    </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
-      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
-      integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-  </body>
+
+
+  <body class="smooth-scroll" >
+
+    <!--PRELOADER START-->
+    <div class="preloader" id="preloader">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-percent"></div>
+            </div>
+            <div id="percent">0%</div>
+        </div>
+    </div>
+    <!--PRELOADER END-->
+
+    <!--MAIN START-->
+    <div id="main">
+
+
+            <!--HEADER START-->
+            <header>
+                <div class="logo-container">
+                    <a href="index.html" id="logo" class="cursor-link" data-type="page-transition">
+                        <img src="./assets/tathva_logo_white.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="menu-burger">
+                    <div class="parallax-wrap burger-wrap">
+                        <div class="parallax-icon">
+                            <div class="burger-box">
+                                <div class="burger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="burger-text">
+                        <div class="text-menu">MENU</div>
+                        <div class="text-open">OPEN</div>
+                        <div class="text-close">CLOSE</div>
+                    </div>
+                </div>
+
+            </header>
+            <!--HEADER END-->
+
+            <!--MENU OVERLAY START-->
+            <div id="menu-overlay">
+                <div class="container">
+                    <div class="content-wrapper">
+                        <nav class="primary-nav">
+                            <ul>
+                                <li><a href="index.html" class="menu-link cursor-link" data-type="page-transition">Index</a></li>
+                                <li><a href="about.html" class="menu-link cursor-link" data-type="page-transition">About</a></li>
+                                <li><a href="contact.html" class="menu-link cursor-link" data-type="page-transition">Contact</a></li>
+                          
+                            </ul>
+                        </nav>
+                        <div class="company-info">
+                            <a href="#" class="info-email link-underline cursor-link">tathva@gamail.com</a><br>
+                            <a href="#" class="info-tel link-underline cursor-link">1234567890</a>
+                            <div class="info-address">
+                                <p>NITC</p>
+                            </div>
+                            <ul class="sm-links">
+                                <li><a href="#" class="cursor-link"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#" class="cursor-link"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#" class="cursor-link"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="cursor-link"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MENU OVERLAY END-->
+
+            <div id="scroll-content">
+            </div>
+
+            <!--PAGE CONTENT START-->
+            <div class="page-content">
+                
+                
+              <div class="intro">
+                <h1>Tathva21</h1>
+                <video src="./assets/Atlas720-1-1-1.webm"></video>
+              </div>
+                
+
+            </div>
+            <!--PAGE CONTENT END-->
+
+    </div>
+    <!--MAIN END-->
+
+
+    <!--CUSTOM CURSOR START-->
+    <div id="custom-cursor">
+        <div id="cursor-outer">
+            <div id="cursor-loading"></div>
+        </div>
+
+        <div id="cursor-inner"></div>
+    </div>
+    <!--CUSTOM CURSOR END-->
+
+    <!--Jquery JS-->
+    <script src="js/jquery.min.js"></script>
+    <!--Plugins JS-->
+    <script src="js/plugins.min.js"></script>
+     <!--Site Main JS-->
+    <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
 </html>

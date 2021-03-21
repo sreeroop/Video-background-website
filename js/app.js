@@ -3,14 +3,14 @@ const video = intro.querySelector("video");
 const text = intro.querySelector("h1");
 //END SECTION
 const section = document.querySelector("section");
-const end = section.querySelector("h1");
+const end = intro.querySelector("h1");
 
 //SCROLLMAGIC
 const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 5000,
+  duration: 4000,
   trigger: intro,
   triggerHook: 0
 })
@@ -21,7 +21,7 @@ let scene = new ScrollMagic.Scene({
 const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
-  duration: 1000,
+  duration: 3000,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -39,18 +39,5 @@ scene.on("update", e => {
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
-  console.log(scrollpos, delay);
-
   video.currentTime = delay;
-}, 50);
-
-const hamburger = document.querySelector(".hamburger");
-
-const navLinks = document.querySelector(".nav-links");
-
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-
-});
+}, 33.33);
