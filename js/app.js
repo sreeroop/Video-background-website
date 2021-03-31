@@ -10,7 +10,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 11000,
+  duration: 10000,
   trigger: intro,
   triggerHook: 0
 })
@@ -40,7 +40,7 @@ scene.on("update", e => {
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
   video.currentTime = delay;
-}, 33.33);
+}, 20);
 
 
 window.onload = function(){
