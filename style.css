@@ -284,7 +284,12 @@ a {
   position: relative;
   overflow-y: hidden;
 }
-
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100vh;
+}
 .intro video {
   height: 100%;
   width: 100%;
