@@ -277,30 +277,12 @@ h4 {
 p,
 a {
 }
-.conatiner{
-  height: 100vh;
-  width: 100%;
-  position: relative;
-}
 .intro {
   height: 100vh;
-  position: absolute;
-  right: 0;
+  position: relative;
+  top: 0;
   overflow-y: hidden;
-  width: 70%;
   display: flex;
-  justify-self: flex-end;
-}
-@media screen and (max-width: 768px){
-  .intro {
-    width: 100%;
-  }
-}
-.overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 100vh;
 }
 .intro video {
   height: 100%;
